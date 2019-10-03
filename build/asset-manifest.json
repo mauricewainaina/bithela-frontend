@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c32dfc5.chunk.css",
+    "main.js": "/static/js/main.4c4dcb12.chunk.js",
+    "main.js.map": "/static/js/main.4c4dcb12.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.e0810285.chunk.css": "/static/css/2.e0810285.chunk.css",
+    "static/js/2.f642a632.chunk.js": "/static/js/2.f642a632.chunk.js",
+    "static/js/2.f642a632.chunk.js.map": "/static/js/2.f642a632.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5c27210738a68e0841a7affa8fa7f53f.js": "/precache-manifest.5c27210738a68e0841a7affa8fa7f53f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.e0810285.chunk.css.map": "/static/css/2.e0810285.chunk.css.map",
+    "static/css/main.5c32dfc5.chunk.css.map": "/static/css/main.5c32dfc5.chunk.css.map",
+    "static/media/Bitcoin.svg": "/static/media/Bitcoin.d7876d48.svg",
+    "static/media/ETH.png": "/static/media/ETH.9be22706.png",
+    "static/media/aud.svg": "/static/media/aud.4b564799.svg",
+    "static/media/register.module.css": "/static/media/background_login.76d2a887.jpg",
+    "static/media/landing-bottom.svg": "/static/media/landing-bottom.9ba87016.svg",
+    "static/media/landing-top.svg": "/static/media/landing-top.154b1b90.svg",
+    "static/media/index.css": "/static/media/seguisbi.1770fbba.ttf",
+    "static/media/withdraw.jpg": "/static/media/withdraw.54abe1c5.jpg"
+  }
+}

@@ -1,0 +1,68 @@
+.Button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    background-color: transparent;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.Coin_Button {
+    width: 150px;
+    height: 40px;
+    padding: 0 0 8px 19px;
+    background-color: transparent;
+    border-radius: 25px;
+    text-align: left;
+    color: #555;
+    -webkit-box-shadow: 0 5px 10px 0 #eee;
+    box-shadow: 0 5px 10px 0 #eee;
+    border: 2px solid transparent;
+    font-size: 16px;
+    position: relative;
+}
+
+.Coin_Button>img {
+    height: 24px;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+.Coin_Button span {
+    padding-left: 6px;
+}
+
+.Coin_Button:hover, .Button__BtnCoin___1P0z4.Button__Checked___2G89J {
+    border-color: #922c88;
+    -webkit-box-shadow: 0 4px 13px rgba(180, 27, 165, 0.2);
+    box-shadow: 0 4px 13px rgba(180, 27, 165, 0.2);
+}
+
+.Button_Checked {
+    height: 27px;
+    width: 27px;
+    border-radius: 100%;
+    padding: 3px 8px 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: linear-gradient(105deg, #d52882, #632572);
+    position: absolute;
+    right: -3%;
+    bottom: 68%;
+    display: none;
+}
+
+.Buy_Button {
+    font-family: SegoeUI-Bold;
+    background: -webkit-gradient(linear, left top, right top, from(#53236d), to(#e12b82));
+    background: linear-gradient(90deg, #53236d, #e12b82);
+    width: 240px;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}

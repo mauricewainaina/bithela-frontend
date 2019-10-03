@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: SegoeUI, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  position: relative;
+  min-height: 100vh;
+}
+
+body, html{
+  overflow-x: hidden;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input:focus {
+  outline: none !important;
+  border: none;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow:none !important;
+
+}
+.box-shadow {
+  -webkit-box-shadow: 0px 2px 19px 4px rgba(146, 44, 136, 0.08);
+  -moz-box-shadow: 0px 2px 19px 4px rgba(146, 44, 136, 0.08);
+  box-shadow: 0px 2px 19px 4px rgba(146, 44, 136, 0.08);
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: local("SegoeUI"), url(./app/assets/fonts/segoeui.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Light";
+  src: local("SegoeUI"), url(./app/assets/fonts/segoeuil.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Bold";
+  src: local("SegoeUI"), url(./app/assets/fonts/segoeuib.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Bold-Italic";
+  src: local("SegoeUI"), url(./app/assets/fonts/seguisbi.ttf) format("truetype");
+}

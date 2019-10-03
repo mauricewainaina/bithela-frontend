@@ -1,0 +1,59 @@
+.history {
+  font-family: SegoeUI-Bold;
+  padding-bottom: 15px !important;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #922c88;
+  text-transform: uppercase;
+}
+
+.historyWrap {
+  background-color: white;
+}
+
+.historyTable {
+  font-family: SegoeUI-Bold;
+  padding-bottom: 30px !important;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 29px;
+  font-size: 14px;
+  font-weight: 300;
+  /* color: #922c88; */
+  text-transform: uppercase;
+}
+
+.historyTableBody  {
+  /* display: block; */
+  /* height: 150px; */
+  overflow: auto;
+  padding-top: 39px;
+}
+
+/* .historyTable tbody::-webkit-scrollbar {
+  width: 6px;
+}
+
+.historyTable tbody::-webkit-scrollbar-track {
+  margin-right: 5px;
+}
+
+.historyTable tbody::-webkit-scrollbar-thumb {
+  background-color: #d192c7;
+  border-radius: 5px;
+} */
+
+.table_Heading {
+  font-family: SegoeUI-Bold;
+  color: #922c88;
+}
+
+.Round_Dot {
+  display: inline-block;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #922c88;
+  margin: 0 10px 2px 0;
+}

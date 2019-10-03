@@ -1,0 +1,121 @@
+.BalancesTitle {
+    font-family: SegoeUI-Bold;
+    font-size: 24px;
+    font-weight: 700;
+    color: #582871;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.BalancesHead {
+    padding-bottom: 30px;
+    margin-bottom: 37px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    color: #922c88;
+}
+
+.DepositBtn, .WithdrawBtn {
+    font-family: SegoeUI-Bold;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 25px;
+    width: 160px;
+    height: 40px;
+}
+
+.DepositBtn {
+    color: #582871;
+    /* width: 80%; */
+    margin-right: 15px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 4px 13px rgba(124, 17, 180, 0.2);
+    box-shadow: 0 4px 13px rgba(124, 17, 180, 0.2);
+}
+
+.DepositBtn:hover {
+    background-color: #582871;
+    color: #fff;
+}
+
+.WithdrawBtn {
+    color: #99398f;
+    /* width: 80%; */
+    -webkit-box-shadow: 0 4px 13px rgba(180, 27, 165, 0.2);
+    box-shadow: 0 4px 13px rgba(180, 27, 165, 0.2);
+}
+
+.WithdrawBtn:hover {
+    background-color: #922c88;
+    color: #fff;
+}
+
+
+.historyWrap {
+    background-color: white;
+  }
+  
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .DepositBtn, .WithdrawBtn {
+        width: 90px;
+        font-size: 12px;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .BalancesHead {
+        font-size: 8px;
+    }
+
+    .DepositBtn, .WithdrawBtn {
+        width: 40%;
+        font-size: 12px;
+        /* display: none */
+    }
+    .BalancesRow {}
+
+    .BalancesCard {
+        margin: 25px 10px;
+    }
+}

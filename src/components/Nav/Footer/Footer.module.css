@@ -1,0 +1,28 @@
+.Footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #2B2837;
+    color: #7b7495;
+    font-size: 14px;
+}
+
+.FooterTop {
+    /* justify-content: space-between; */
+    padding-bottom: 14px;
+    border-bottom: 1px solid #3c3b3b;
+    margin-bottom: 16px;
+    /* display: inline-block; */
+}
+
+.Logo {
+    color: white;
+    font-size: 24px;
+
+}
+
+.NavItem {
+    margin-left: 50px;
+    /* display: inline-block; */
+}

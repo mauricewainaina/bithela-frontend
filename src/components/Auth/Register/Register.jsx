@@ -77,9 +77,9 @@ class Register extends Component {
         <div className={`${"row"} ${styles.noGutter}`}>
           <div className={`${"col-lg-7"} ${styles.register_right}`}>
             <div className={`${styles.heading} ${"mt-5"}`}>
-              <h1 className="display-4">
+              <h5 className="display-5">
                 <span>Welcome to</span> <span>Bithela</span>
-              </h1>
+              </h5>
               <h5>Register to access your account</h5>
             </div>
           </div>

@@ -1,8 +1,7 @@
 import axios from 'axios'
 import { toastr } from "react-redux-toastr";
-import { openModal } from '../actions/modalActions'
  
-import { VERIFY_TRANSACTION, CASH_DEPOSIT, DEPOSIT_HISTORY } from './types'
+import {  DEPOSIT_HISTORY } from './types'
 
 
 const url = 'https://backend.bithela.com'
@@ -23,10 +22,10 @@ export const cashDeposit = (data, history) => dispatch => {
         .then(res => {
             // dispatch(openModal('CashDepositModal'))
             history.push('/balances')
-            toastr.success('Success', 'Deposit Succesfull')
-            console.log(res)
+            toastr.success('Success', res.data.details.message) 
+            console.log('Resolve', res.data.details.message)
         })
-        .catch(e => console.log(e))
+        .catch(e => console.log('Error', e.response.data))
 }
 
 export const depositHistory = (phoneNumber, history) => dispatch => {

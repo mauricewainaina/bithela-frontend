@@ -46,13 +46,13 @@ class Nav extends Component {
                 {/* <a className="nav-link" href="#">Buy / Sell <span className="sr-only">(current)</span></a> */}
                 <Link className='nav-link' to='/exchange'>Buy / Sell</Link>
               </li>
-              <li className="nav-item ml-4">
+              <li className="nav-item active ml-4">
                 <Link className='nav-link ' to='/balances'>Balances</Link>
               </li>
-              <li className="nav-item ml-4 ">
+              <li className="nav-item  active ml-4 ">
                 <Link className='nav-link' to='/deposit'>Deposit</Link>
               </li>
-              <li className="nav-item ml-4">
+              <li className="nav-item active ml-4">
                 <Link className='nav-link' to='/withdraw'>Withdraw</Link>
               </li>
             </ul>

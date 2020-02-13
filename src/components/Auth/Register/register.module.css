@@ -42,15 +42,7 @@
     background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .register_right {
-        height: 38vh;
-    }
-    .heading {
-        font-size: 36px;
-    }
-}
+
 
 .smsHeading {
     color: #932c88;
@@ -64,6 +56,33 @@
 .Link {
     color: #922c88
 }
+
 .Link:hover {
     color: #922c88
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .register_right {
+        height: 38vh;
+    } 
+    .heading {
+        font-size: 36px;
+    } 
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .heading {
+        font-size: 6px;
+    }
+
+    .register_right {
+        height: 30vh;
+    }
 }

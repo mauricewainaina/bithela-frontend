@@ -54,10 +54,17 @@
   width: 80px;
   outline: none;
   color: #fff;
-
+  /* display: block; */
+  text-align: center;
 }
 /* 
-.depositButtons:focus {
-  box-shadow:none !important;
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 
-} */
+@media (min-width: 320px) and (max-width: 480px) {
+  .depositButtons {
+    width: 54px;
+    font-size: 12px;
+  }
+}

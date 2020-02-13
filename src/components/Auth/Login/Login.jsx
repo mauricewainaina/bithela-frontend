@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from "react-router-dom";
-import axios from 'axios'
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import ReactPhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/dist/style.css'
@@ -44,15 +43,15 @@ class Login extends Component {
         }
     }
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.auth.isAuthenticated) {
+    componentDidUpdate(prevProps) {
+        if (this.props.auth.isAuthenticated !== prevProps.auth.isAuthenticated) {
             this.props.history.push('/deposit')
         }
-        if (nextProps.errors) {
-            this.setState({ errors: nextProps.errors.details }, () => {
-                if (nextProps.errors.details.verified === false) {
-                    // this.props.history.push('/verify')
-                    console.log(nextProps.errors.details.verified)
+
+        if (this.props.errors !== prevProps.errors) {
+            this.setState({ errors: this.props.errors.details }, () => {
+                if (this.props.errors.details.verified === false) {
+                    console.log(this.props.errors.details.verified)
                     const userData = {
                         phoneNumber: localStorage.getItem('phoneNumber')
                     }
@@ -62,6 +61,24 @@ class Login extends Component {
             })
         }
     }
+
+    // componentWillReceiveProps(nextProps) {
+    //     if (nextProps.auth.isAuthenticated) {
+    //         this.props.history.push('/deposit')
+    //     }
+    //     if (nextProps.errors) {
+    //         this.setState({ errors: nextProps.errors.details }, () => {
+    //             if (nextProps.errors.details.verified === false) {
+    //                 console.log(nextProps.errors.details.verified)
+    //                 const userData = {
+    //                     phoneNumber: localStorage.getItem('phoneNumber')
+    //                 }
+    //                 this.props.resendOTP(userData, this.props.history)
+    //                 console.log(userData)
+    //             }
+    //         })
+    //     }
+    // }
 
 
 
@@ -88,11 +105,13 @@ class Login extends Component {
         const { errors } = this.state;
         return (
             <div className={`${styles.register}`}>
+                
                 <div >
                     <div className={`${"row"} ${styles.noGutter}`}>
                         <div className={`${"col-lg-7"} ${styles.register_right}`}>
                             <div className={`${styles.heading} ${"mt-5"}`}>
-                                <h1 className='display-4'><span>Welcome to</span> <span>Bithela</span></h1>
+                                {/* <h5 className='display-5'><span>HOME</span></h5> */}
+                                <h5 className='display-5'><span>Welcome to</span> <span>Bithela</span></h5>
                                 <h5>Login to access your account</h5>
                             </div>
 

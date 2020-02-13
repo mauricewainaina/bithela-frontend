@@ -1,19 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux";
 import axios from 'axios'
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 
 import { coinOrder } from '../../../app/store/actions/ExchangeActions'
 
-
-import BTC from '../../../app/assets/img/BTC.png'
-import ETH from '../../../app/assets/img/ETH.png'
-import Checked from '../../../app/assets/img/checked.png'
-
 import styles from '../Exchange.module.css'
 import SelectInput from '../../../app/common/form/SelectInput'
-import TextInput from "../../../app/common/form/TextInput";
 
 
 
@@ -133,7 +127,10 @@ class Buy extends Component {
 
                                     />
                                     {this.state.pairValue ? (
-                                        <span>1 {this.state.coinToBuy} = {this.state.pairValue} {this.state.buyFrom}</span>
+                                        <span>
+                                            1 <span className={styles.CoinToBuy}>{this.state.coinToBuy} </span> =  <span>{this.state.pairValue} </span> 
+                                            <span className={styles.CoinToBuy}> {this.state.buyFrom}</span>
+                                        </span>
                                     ) : (<span> </span>)}
                                 </div>
                             ) : (

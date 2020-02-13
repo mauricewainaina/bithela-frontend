@@ -49,9 +49,9 @@ class DepositHistory extends Component {
       if (history.length >= 0) {
         historyItems = (
           history.map(item => (
-            <tbody>
+            <tbody key={item.symbol}>
               <tr>
-                <td scope="row">
+                <td>
                   <div className={styles.Round_Dot}></div>
                   {item.symbol}
                 </td>

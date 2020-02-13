@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import ReactPhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/dist/style.css'

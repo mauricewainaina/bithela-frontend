@@ -4,9 +4,15 @@
     border-radius: 25px;
     position: relative;
     z-index: 1;
-    background-color: #fff;
+    /* background-color: #fff; */
     width: 100%;
 }
+
+.Select_Input:focus {
+    outline: none !important;
+    box-shadow:none !important;
+  
+  }
 
 /* .Select_Input:hover::before {
     content: '';

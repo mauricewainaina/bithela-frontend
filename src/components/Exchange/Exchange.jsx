@@ -1,22 +1,17 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import axios from 'axios'
-// import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Buy from './Buy/Buy'
 import Sell from './Sell/Sell'
 
 // import Header from "../Header/Header";
-import TextInput from "../../app/common/form/TextInput";
 import History from "./History/ExchangeHistory";
 import Charts from './Charts/Charts'
-import Select from "react-select";
 import styles from "../Deposit/DepositCrypto.module.css";
 import Pagelayout from '../Nav/PageLayout/PageLayout'
-import SelectInput from '../../app/common/form/SelectInput'
 
 // Images
 
-import Ethereum from '../../app/assets/img/ethereum.png'
 
 
 const StateToProps = (state) => ({

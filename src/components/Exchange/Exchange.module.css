@@ -66,3 +66,8 @@
     overflow: hidden;
     position: relative;
 }
+
+.CoinToBuy {
+    font-weight: 300;
+    color: #53236d;
+}

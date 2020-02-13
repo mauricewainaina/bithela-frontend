@@ -33,9 +33,16 @@ class Verify extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            phoneNumber: this.props.auth.registeredUser || localStorage.getItem('phoneNumber')
-        })
+        if (this.props.auth.registeredUser) {
+            this.setState({
+                phoneNumber: this.props.auth.registeredUser 
+            })
+        } else {
+            this.setState({
+                phoneNumber: localStorage.getItem('phoneNumber')
+            })
+        }
+        
     }
 
 

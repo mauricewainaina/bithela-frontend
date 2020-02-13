@@ -1,8 +1,8 @@
-import { SIGN_UP, LOGIN, SET_CURRENT_USER } from "../actions/types";
+import { SIGN_UP, SET_CURRENT_USER } from "../actions/types";
 import isEmpty from '../../validation/is-empty'
 
 const initialState = {
-  registeredUser: {},
+  registeredUser: null,
   isAuthenticated: false,
   loggedInUser: {}
 };

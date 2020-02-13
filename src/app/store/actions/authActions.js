@@ -2,7 +2,7 @@ import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 import { toastr } from "react-redux-toastr";
 
-import { SIGN_UP, LOGIN, GET_ERRORS, SET_CURRENT_USER } from "./types";
+import { SIGN_UP, GET_ERRORS, SET_CURRENT_USER } from "./types";
 import setAuthToken from '../../utils/setAuthToken'
 
 const url = 'https://backend.bithela.com'
@@ -71,6 +71,7 @@ export const loginUser = (userData) => dispatch => {
     // dispatch(setAuthLoadingTrue());
     axios.post(`${url}/api/users/login`, userData)
         .then(res => {
+            console.log(res)
             if (res.data.details.token) {
                 // Save to local Storage
                 const { token } = res.data.details;

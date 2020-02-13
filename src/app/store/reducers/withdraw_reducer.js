@@ -1,4 +1,4 @@
-import { WiTHDRAW_HISTORY, WITHDRAW_HISTORY } from "../actions/types";
+import { WITHDRAW_HISTORY } from "../actions/types";
 
 const initialState = {
   coin: "bitcoin",

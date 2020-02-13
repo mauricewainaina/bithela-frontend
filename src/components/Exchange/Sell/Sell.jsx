@@ -2,13 +2,8 @@ import React, { Component } from 'react'
 import { connect } from "react-redux";
 import axios from 'axios'
 
-import BTC from '../../../app/assets/img/BTC.png'
-import ETH from '../../../app/assets/img/ETH.png'
-import Checked from '../../../app/assets/img/checked.png'
-
 import styles from '../Exchange.module.css'
 import SelectInput from '../../../app/common/form/SelectInput'
-import TextInput from "../../../app/common/form/TextInput";
 
 
 

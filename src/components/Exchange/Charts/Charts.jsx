@@ -7,7 +7,7 @@ class Charts extends Component {
         return (
             <div>
                 <TradingViewWidget 
-                    symbol="BINANCE:ETHBTC"
+                    symbol="BTCUSD"
                     width='600' 
                     height='500'
                 />
@@ -15,5 +15,6 @@ class Charts extends Component {
         )
     }
 }
+
 
 export default Charts

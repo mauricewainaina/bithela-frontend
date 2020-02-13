@@ -1,12 +1,11 @@
-FROM node:10 AS bithela-frontend-app
+FROM node:alpine as bithela-frontend
 WORKDIR /app
 COPY . .
-RUN npm i
-RUN npm run build 
-FROM httpd:alpine
-RUN apk add --update nodejs nodejs-npm
-RUN npm i serve -g
-WORKDIR /app
-COPY --from=bithela-frontend-app /app/build .
-EXPOSE 2030
-CMD ["serve", "-s", ".", "-p", "2030" ]
+RUN npm install 
+CMD ["npm", "run", "build"]
+
+FROM nginx 
+EXPOSE 80
+COPY --from=bithela-frontend /app/build /usr/share/nginx/html
+
+

@@ -9,8 +9,11 @@ pipeline {
 			steps {
 				sh '''
 				sudo su
+                                
 				cd /home/julius/bithela-project/bithela
-				sudo git pull 
+				whoami
+sudo git pull
+                                
 				'''
 			}
 		}
@@ -31,7 +34,7 @@ pipeline {
 				sudo su 
 				cd /home/julius/bithela-project/bithela
 				sudo npm run build
-                sudo nohup serve -s build -l 2030 &
+                                sudo nohup serve -s build -l 2030 &
 				'''
 			}
 

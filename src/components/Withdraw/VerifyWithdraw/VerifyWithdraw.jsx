@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import { connect } from "react-redux";
-
-import TextInput from '../../../app/common/form/TextInput'
 
 
 class VerifyWithdraw extends Component {

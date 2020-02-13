@@ -52,7 +52,7 @@ class ExchangeHistory extends Component {
           history.map(item => (
             <tbody>
               <tr>
-                <td scope="row">
+                <td >
                   <div className={styles.Round_Dot}></div>
                   {item.pair}
                 </td>

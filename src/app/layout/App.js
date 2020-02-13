@@ -1,6 +1,28 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import PrivateRoute from '../utils/PrivateRoute'
+
+import PrivateRoute from "../utils/PrivateRoute";
+import ModalManger from "../../components/Modals/ModalManager";
+import Spinner from "../common/Spinner";
+import ErrorBoundary from "../common/ErrorBoundary";
+
+// const Landing = lazy(() => import("../../components/Landing/Landing"));
+// const Register = lazy(() => import("../../components/Auth/Register/Register"));
+// const DepositCrypto = lazy(() =>
+//   import("../../components/Deposit/DepositCrypto")
+// );
+// const Exchange = lazy(() => import("../../components/Exchange/Exchange"));
+// const Login = lazy(() => import("../../components/Auth/Login/Login"));
+// const Verify = lazy(() => import("../../components/Auth/Verify/Verify"));
+// const Balances = lazy(() => import("../../components/Balances/Balances"));
+// const Withdraw = lazy(() => import("../../components/Withdraw/Withdraw"));
+// const ForgotPassword = lazy(() =>
+//   import("../../components/Auth/PasswordReset/ForgotPassword")
+// );
+// const ResetPassword = lazy(() =>
+//   import("../../components/Auth/PasswordReset/ResetPassword")
+// );
+// const Landing = lazy(() => import('../../components/Landing/Landing'));
 
 import Landing from "../../components/Landing/Landing";
 import Register from "../../components/Auth/Register/Register";
@@ -12,7 +34,6 @@ import Balances from '../../components/Balances/Balances'
 import Withdraw from "../../components/Withdraw/Withdraw";
 import ForgotPassword from "../../components/Auth/PasswordReset/ForgotPassword";
 import ResetPassword from "../../components/Auth/PasswordReset/ResetPassword";
-import ModalManger from '../../components/Modals/ModalManager'
 
 function App() {
   return (
@@ -28,7 +49,7 @@ function App() {
         <PrivateRoute exact path="/deposit" component={DepositCrypto} />
       </Switch>
       <Switch>
-        <PrivateRoute exact path='/balances' component={Balances} />
+        <PrivateRoute exact path="/balances" component={Balances} />
       </Switch>
       <Switch>
         <PrivateRoute exact path="/exchange" component={Exchange} />

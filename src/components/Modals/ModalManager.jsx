@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from "react-redux";
 import WithdrawModal from "./WithdrawModal";
 import CashDepositModal from './CashDepositModal'
-import WithdrawCashModal from './WithdrawCashModal'
 
 
 const modalLookup = {

@@ -16,12 +16,12 @@ class Footer extends Component {
                             <span className={styles.NavItem}>
                                 <a href="/about">Contact Us</a>
                             </span>
-                            <span className={styles.NavItem}>
+                            {/* <span className={styles.NavItem}>
                                 <a href="/about">HELP/SUPPORT</a>
                             </span>
                             <span className={styles.NavItem}>
                                 <a href="/about">Terms and Conditions</a>
-                            </span>
+                            </span> */}
                         </div>
                         {/* <div className={styles.FooterLeft}>
                         </div> */}

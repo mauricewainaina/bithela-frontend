@@ -23,13 +23,6 @@ class Withdraw extends Component {
     phoneNumber: '',
     transactionId: '',
     copied: false,
-    // coinOptions: [
-    //   { value: "BTC", label: "Bitcoin" },
-    //   { value: "ETH", label: "Etherium" },
-    //   { value: "LTC", label: "Litecoin" },
-    //   { value: "XRP", label: "Ripple" },
-    //   { value: "AION", label: "AION" }
-    // ],
 
   };
 

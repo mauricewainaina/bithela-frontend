@@ -1,6 +1,4 @@
 import React from 'react'
-import classnames from 'classnames';
-import PropTypes from 'prop-types';
 import styles from './Select.module.css'
 
 const SelectInput = ({ name, value, error, info, onChange, options }) => {

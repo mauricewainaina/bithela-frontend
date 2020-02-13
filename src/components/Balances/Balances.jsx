@@ -6,7 +6,6 @@ import Bitcoin from '../../app/assets/svg/Bitcoin.svg'
 import UsdT from '../../app/assets/img/aud.svg'
 
 import Ethereum from '../../app/assets/img/ethereum.png'
-// import Aion from '../../app/assets/img/AION.jpg'
 import styles from './Balances.module.css'
 
 import { getBalance } from '../../app/store/actions/balanceActions'
@@ -60,7 +59,7 @@ class Balances extends Component {
                 icon = <img src={UsdT} width='25' className='mr-4' alt='eth' />
             }
             return (
-                <tbody>
+                <tbody key={currency.symbol}>
                     <tr>
                         <td scope="row"> {icon} {currency.symbol}</td>
                         <td>{currency.amount}</td>

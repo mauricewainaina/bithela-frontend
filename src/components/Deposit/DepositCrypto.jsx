@@ -1,21 +1,15 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import axios from 'axios'
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import CryptoDeposit from './CryptoDeposit/CryptoDeposit'
 import CashDeposit from './CashDeposit/CashDeposit'
 
 // import Header from "../Header/Header";
-import TextInput from "../../app/common/form/TextInput";
 import History from "./History/DepositHistory";
-import Select from "react-select";
 import styles from "./DepositCrypto.module.css";
 import Pagelayout from '../Nav/PageLayout/PageLayout'
-import SelectInput from '../../app/common/form/SelectInput'
 
 // Images
 
-import Ethereum from '../../app/assets/img/ethereum.png'
 
 
 const StateToProps = (state) => ({
@@ -31,43 +25,8 @@ class DepositCrypto extends Component {
     phoneNumber: '',
     transactionId: '',
     copied: false,
-    // coinOptions: [
-    //   { value: "BTC", label: "Bitcoin" },
-    //   { value: "ETH", label: "Etherium" },
-    //   { value: "LTC", label: "Litecoin" },
-    //   { value: "XRP", label: "Ripple" },
-    //   { value: "AION", label: "AION" }
-    // ],
 
   };
-
-  // componentDidMount() {
-  //   console.log(this.props.auth)
-  //   this.setState({ phoneNumber: this.props.auth.loggedInUser.phoneNumber })
-  // }
-
-  // onChange = ({ target }) => {
-  //   this.setState({
-  //     [target.name]: target.value
-  //   }, () => {
-  //     const details = {
-  //       phoneNumber: this.state.phoneNumber,
-  //       symbol: this.state.selectedCoin
-  //     }
-  //     axios.post('http://34.83.183.132:4000/api/trade/deposit/crypto/address', details)
-  //       .then(res => {
-  //         console.log('Crypto Address', res.data)
-  //         this.setState({
-  //           address: res.data.address
-  //         })
-  //       })
-  //   })
-  // }
-
-  // onSubmit = e => {
-  //   e.preventDefault();
-  //   console.log("Submitted");
-  // };
 
   render() {
 

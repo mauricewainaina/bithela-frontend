@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import ReactPhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/dist/style.css'
 
 
 import { forgotPassword } from '../../../app/store/actions/authActions'
-import TextInput from '../../../app/common/form/TextInput'
 import styles from '../Register/register.module.css'
 
 const actions = {

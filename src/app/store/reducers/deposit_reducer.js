@@ -1,4 +1,4 @@
-import { DEPOSIT, DEPOSIT_HISTORY } from "../actions/types";
+import { DEPOSIT_HISTORY } from "../actions/types";
 
 const initialState = {
   coin: "bitcoin",

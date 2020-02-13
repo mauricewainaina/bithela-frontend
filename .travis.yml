@@ -4,4 +4,4 @@ services:
 before_install:
     - docker build -t maurice94/bithela-dev -f Dockerfile.dev .
 script:
-    - docker run maurice94/bithela-dev npm run test -- --coverage       
+    - docker run -e CI=true maurice94/bithela-dev npm run test 

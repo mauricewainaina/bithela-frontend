@@ -1,7 +1,20 @@
 sudo: required
+
 services:
     - docker
+
 before_install:
     - docker build -t maurice94/bithela-dev -f Dockerfile.dev .
+
 script:
     - docker run -e CI=true maurice94/bithela-dev npm run test 
+
+# deploy:
+#     - provider: elasticbeanstalk
+#     - app: ""
+#     - env: ""
+#     - region: "us-west-2"
+#     - bucket_name: ""
+#     - bucket_path: ""
+#     on:
+#         master                
